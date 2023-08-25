@@ -1,0 +1,12 @@
+<img src="http://imgur.com/1ZcRyrc.png" style="float: left; margin: 20px; height: 55px">
+
+# Capstone: Examining Drug Use Profiles (README)
+
+
+Singapore takes a zero tolerance stance towards drug use as its harms impact not only the individual drug user but their families and the society at large as well. Studying drug use profiles is important for Singapore as it can help policymakers and practitioners to better understand the diverse patterns of drug use and inform the fomulation of effective policies and drug rehabilitation practices to mitigate drug use.
+
+This project thus aims to examine what are the different drug use profiles and their distinguishing features for the abovementioned purpose. As data in the local setting was not available, ready data from an extensive USA annual survey, the National Survey on Drug Use and Health (NSDUH) survey, was used for this project. The assumption is that drug use (or i.e., human behaviours) could be generalisable  even across different country contexts. 
+
+Cluster analyses - kmeans, DBSCAN, and hierarchical clustering - were conducted using the data from survey cohorts 2015-2019 for this study to examine the underlying similarities in drug use patterns. Results from the analyses showed challenges identifying distinct clusters in the sample as there were strong correlations/overlaps across different features. Amongst the cluster analyses conducted, kmeans clustering using Euclidean distance and extracting 3 clusters achieved a relatively higher silhouette score. It was thus selected for further examination with visulisations and predictive modelling to determine the notable features that could distinguish the different drug use profiles. Random forest analysis was done to find the features predictive of the derived clusters. SHAP analysis was also conducted to determine the specific features whih were important for each cluster.
+
+Overall, the project found some potential drug use profiles to explore further comprising the interactions between drug use patterns, criminal behaviour, risk behaviour, demographic profiles, and the impact of environment (e.g., workplace interventions). More in-depth work (e.g., literature review) could be done to uncover/create new features that can better distinguish the clusters and reduce the overlaps. Local data could also be sourced and examined to determine if similar drug use patterns can be found in Singapore and to derive findings that would be more specific to the local context. 
